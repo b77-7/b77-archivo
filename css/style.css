@@ -528,6 +528,11 @@ nav a.active {
         padding: 15px 20px;
     }
 
+  .hero {
+        height: 70vh; /* probá entre 60 y 75 */
+        background-position: center;
+    }
+
     .logo img {
         width: 110px;
     }
