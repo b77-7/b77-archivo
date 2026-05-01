@@ -36,6 +36,9 @@ body {
     z-index: 999;
 }
 
+.overlay {
+    z-index: 1;
+}
 
 /* =========================
    LOGO
@@ -518,6 +521,11 @@ nav a.active {
     pointer-events: all;
 }
 
+
+#menu {
+    display: flex;
+}
+
 /* =========================
    MOBILE
 ========================= */
@@ -611,6 +619,11 @@ nav a.active {
         align-items: flex-start;
         text-align: left;
         gap: 20px;
+    }
+
+
+    .track img {
+        height: 180px;
     }
 
     /* ESCALONAMIENTO (clave estética) */
