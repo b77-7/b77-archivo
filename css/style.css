@@ -20,7 +20,7 @@ body {
 ========================= */
 
 .header {
-    position:  absolute;
+    position:  fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -33,7 +33,7 @@ body {
 
     background-color: #F5F3EF;
 
-    z-index: 100;
+    z-index: 999;
 }
 
 
@@ -529,7 +529,7 @@ nav a.active {
     }
 
   .hero {
-        height: 70vh; /* probá entre 60 y 75 */
+        height: 65vh;
         background-position: center;
     }
 
@@ -584,4 +584,62 @@ nav a.active {
     .hero h1 {
         font-size: 26px;
     }
+    
+    
+/* ORIGEN WEB MEDIA */
+
+.camino {
+    padding: 0 20px;
+    gap: 80px; /* antes 140px */
+}
+
+/* TODOS LOS BLOQUES A COLUMNA */
+
+.b1,
+.b2,
+.b3 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+/* BLOQUE 1 */
+
+.b1 img {
+    width: 220px;
+}
+
+.b1 p {
+    max-width: 260px;
+}
+
+/* BLOQUE 2 */
+
+.texto-centro {
+    max-width: 280px;
+    text-align: center;
+}
+
+.imagenes-derecha {
+    align-items: center;
+}
+
+.imagenes-derecha img {
+    width: 200px;
+}
+
+/* BLOQUE 3 */
+
+.b3 p {
+    max-width: 280px;
+}
+
+/* BLOQUE 4 */
+
+.b4 {
+    text-align: center;
+}
+
+  
 }
