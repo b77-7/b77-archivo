@@ -14,12 +14,11 @@ body {
     background-color: #F5F3EF; /* 🎯 fondo global */
 }
 
-.texto-base {
+p, h1, h2, h3, a, span {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 300;
     letter-spacing: 0.3px;
     line-height: 1.9;
-    font-size: 14px; /* ajustá según tu diseño */
 }
 
 
