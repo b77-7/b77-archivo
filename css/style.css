@@ -521,34 +521,47 @@ nav a.active {
 /* =========================
    MOBILE
 ========================= */
+
 @media (max-width: 768px) {
 
-    /* HEADER */
+    /* =========================
+       HEADER
+    ========================= */
+
     .header {
         padding: 15px 20px;
-    }
-
-  .hero {
-        height: 65vh;
-        background-position: center;
     }
 
     .logo img {
         width: 110px;
     }
 
-    /* OCULTAR NAV NORMAL */
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+        height: 65vh;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    /* =========================
+       NAV / MENU
+    ========================= */
+
     nav {
         display: none;
     }
 
-    /* HAMBURGUESA */
     .menu-toggle {
         display: flex;
         z-index: 200;
     }
 
-    /* MENU LATERAL */
     #menu {
         position: fixed;
         top: 0;
@@ -580,66 +593,76 @@ nav a.active {
         font-size: 16px;
     }
 
-    /* HERO */
-    .hero h1 {
-        font-size: 26px;
+    /* =========================
+       ORIGEN (COMPOSICIÓN MOBILE)
+    ========================= */
+
+    .camino {
+        padding: 0 20px;
+        gap: 60px;
     }
-    
-    
-/* ORIGEN WEB MEDIA */
 
-.camino {
-    padding: 0 20px;
-    gap: 80px; /* antes 140px */
-}
+    /* BLOQUES A COLUMNA */
 
-/* TODOS LOS BLOQUES A COLUMNA */
+    .b1,
+    .b2,
+    .b3 {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 20px;
+    }
 
-.b1,
-.b2,
-.b3 {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-}
+    /* ESCALONAMIENTO (clave estética) */
 
-/* BLOQUE 1 */
+    .b2 {
+        margin-left: 20px;
+    }
 
-.b1 img {
-    width: 220px;
-}
+    .b3 {
+        margin-left: 40px;
+    }
 
-.b1 p {
-    max-width: 260px;
-}
+    /* BLOQUE 1 */
 
-/* BLOQUE 2 */
+    .b1 img {
+        width: 200px;
+    }
 
-.texto-centro {
-    max-width: 280px;
-    text-align: center;
-}
+    .b1 p {
+        max-width: 260px;
+    }
 
-.imagenes-derecha {
-    align-items: center;
-}
+    /* BLOQUE 2 */
 
-.imagenes-derecha img {
-    width: 200px;
-}
+    .texto-centro {
+        max-width: 260px;
+        text-align: left;
+    }
 
-/* BLOQUE 3 */
+    .imagenes-derecha {
+        align-items: flex-start;
+    }
 
-.b3 p {
-    max-width: 280px;
-}
+    .imagenes-derecha img {
+        width: 180px;
+    }
 
-/* BLOQUE 4 */
+    /* BLOQUE 3 */
 
-.b4 {
-    text-align: center;
-}
+    .b3 p {
+        max-width: 260px;
+    }
 
-  
+    /* DETALLE FINO (rompe rigidez) */
+
+    .b3 img {
+        margin-left: 20px;
+    }
+
+    /* BLOQUE 4 */
+
+    .b4 {
+        text-align: left;
+    }
 }
