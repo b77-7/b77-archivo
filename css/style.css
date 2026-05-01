@@ -610,16 +610,31 @@ nav a.active {
         gap: 60px;
     }
 
-    /* BLOQUES A COLUMNA */
+   /* BLOQUE 1 → fila (imagen + texto) */
+.b1 {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+}
 
-    .b1,
-    .b2,
-    .b3 {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        gap: 20px;
-    }
+/* hacemos flex el contenedor interno */
+.b1 > div {
+    display: flex;
+    gap: 15px;
+}
+
+/* BLOQUE 2 → fila (texto + imágenes) */
+.b2 {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* BLOQUE 3 → lo podés dejar en columna */
+.b3 {
+    flex-direction: column;
+    gap: 20px;
+}
 
 
     .track img {
@@ -639,18 +654,20 @@ nav a.active {
     /* BLOQUE 1 */
 
     .b1 img {
-        width: 200px;
+        width: 180px;
     }
 
     .b1 p {
-        max-width: 260px;
+        max-width: 150px;
+        font-size: 14px;
     }
 
     /* BLOQUE 2 */
 
     .texto-centro {
-        max-width: 260px;
+        max-width: 140px;
         text-align: left;
+        font-size: 14px;
     }
 
     .imagenes-derecha {
