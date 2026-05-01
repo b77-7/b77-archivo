@@ -109,7 +109,7 @@ nav a.active {
 }
 
 .hero h1 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
     letter-spacing: 1px;
     position: relative;
@@ -131,7 +131,7 @@ nav a.active {
 .manifiesto {
     padding: 40px 20px 100px 20px;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.8;
 }
 
@@ -372,7 +372,7 @@ nav a.active {
 /* TEXTO */
 
 .sobre-content p {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.9;
     margin-bottom: 22px;
 
