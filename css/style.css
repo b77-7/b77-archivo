@@ -620,12 +620,9 @@ nav a.active {
 
 /* BLOQUE 1 → columna (imagen arriba, texto abajo) */
 .b1 {
-    flex-direction: column;
-    align-items: flex-start;
     gap: 10px;
 }
 
-/* aseguramos que el contenedor interno también sea columna */
 .b1 > div {
     display: flex;
     flex-direction: column;
